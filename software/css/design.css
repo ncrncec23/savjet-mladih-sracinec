@@ -1,0 +1,496 @@
+/* Native CSS variables */
+/* Header CSS code */
+body {
+    background-color: rgba(122, 50, 49, 1);
+}
+
+header {
+    background-color: black;
+}
+
+.header-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    color: rgba(237, 203, 177, 1)
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.7) 95%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+nav {
+    z-index: 2;
+}
+
+.navigationLink {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(237, 203, 177, 1) !important;
+}
+
+@keyframes hoverButtonJoinUs {
+    0% {
+        background-color: #A47A1E
+    }
+
+    100% {
+        background-color: #AD2523;
+    }
+}
+
+.buttonJoinUs {
+    background-color: #A47A1E;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+#JoinUs {
+    color: white !important;
+}
+
+.buttonJoinUs:hover {
+    animation: hoverButtonJoinUs 0.5s ease-in-out forwards;
+}
+
+.SmsTitle {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.3rem;
+    color: rgba(237, 203, 177, 1) !important;
+}
+
+.SmsTitleContainer {
+    top: 300px;
+}
+
+.joinPadding {
+    padding: 6px 35px;
+    background-color: #A47A1E;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes hoverCTA {
+    0% {
+        background-color: #A47A1E;
+    }
+
+    100% {
+        background-color: #AD2523;
+    }
+}
+
+.joinPadding:hover {
+    animation: hoverCTA 1s ease-in-out forwards;
+}
+
+.li-color {
+    position: relative;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.li-color::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #AD2523;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.li-color:hover::after {
+    width: 100%;
+}
+
+/* Media Queries header */
+
+@media (max-width: 1277px) {
+    .SmsTitle {
+        font-size: 3.8rem;
+    }
+
+    .SmsTitleContainer {
+        top: 280px;
+    }
+
+    .changeGap {
+        gap: 1rem !important;
+    }
+
+    .titleSavjet {
+        font-size: 1.8rem !important;
+    }
+
+    .titleLogo {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .joinPadding {
+        font-size: 1.8rem !important;
+    }
+
+    .marginResponsive {
+        margin-right: 1.4rem !important;
+    }
+}
+
+@media (max-width: 1112px) {
+    .SmsTitle {
+        font-size: 3.4rem;
+    }
+
+    .SmsTitleContainer {
+        top: 250px;
+    }
+
+    .changeGap {
+        font-size: 0.9rem !important;
+    }
+
+    .titleSavjet {
+        font-size: 1.6rem !important;
+    }
+
+    .titleLogo {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .joinPadding {
+        font-size: 1.6rem !important;
+    }
+
+    .marginResponsive {
+        margin-right: 1.3rem !important;
+    }
+}
+
+@media (max-width: 996px) {
+    .SmsTitle {
+        font-size: 3rem;
+    }
+
+    .SmsTitleContainer {
+        top: 220px;
+    }
+
+    .changeGap {
+        font-size: 0.8rem !important;
+    }
+
+    .titleSavjet {
+        font-size: 1.4rem !important;
+    }
+
+    .titleLogo {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .joinPadding {
+        padding: 4px 25px;
+        font-size: 1.4rem !important;
+    }
+
+    .marginResponsive {
+        margin-right: 1.2rem !important;
+    }
+}
+
+@media (max-width: 882px) {
+    .SmsTitle {
+        font-size: 2.6rem;
+    }
+
+    .SmsTitleContainer {
+        top: 210px;
+        gap: 0.5rem !important;
+    }
+
+    .changeGap {
+        gap: 0.7rem !important;
+        font-size: 0.7rem !important;
+    }
+
+    .titleSavjet {
+        font-size: 1.2rem !important;
+    }
+
+    .titleLogo {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .joinPadding {
+        font-size: 1.2rem !important;
+    }
+
+    .marginResponsive {
+        margin-right: 1.1rem !important;
+    }
+
+    .buttonJoinUs {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .SmsTitle {
+        font-size: 2.2rem;
+    }
+
+    .SmsTitleContainer {
+        top: 160px;
+        gap: 0.5rem !important;
+    }
+
+    .changeGap {
+        gap: 0.5rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .titleSavjet {
+        font-size: 1rem !important;
+    }
+
+    .titleLogo {
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    .gappingContainer {
+        gap: 0.9rem !important;
+    }
+
+    .joinPadding {
+        padding: 6px 22px;
+        font-size: 1rem !important;
+    }
+
+    .marginResponsive {
+        margin-right: 1.1rem !important;
+    }
+}
+
+@media (max-width: 648px) {
+    .SmsTitle {
+        font-size: 1.8rem;
+    }
+
+    .navigationLink {
+        gap: 0.5rem !important;
+    }
+
+    .SmsTitleContainer {
+        top: 150px;
+        gap: 0.5rem !important;
+    }
+
+    .changeGap {
+        gap: 0.4rem !important;
+        font-size: 0.5rem !important;
+    }
+
+    .titleSavjet {
+        font-size: 0.9rem !important;
+    }
+
+    .titleLogo {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .joinPadding {
+        padding: 5px 20px;
+        font-size: 0.9rem !important;
+    }
+
+    .marginResponsive {
+        margin-right: 1rem !important;
+    }
+
+    .marginResponsive {
+        margin-right: 0.2rem !important;
+    }
+}
+
+@media (max-width: 648px) {
+    .SmsTitleContainer {
+        top: 130px;
+    }
+}
+
+@media (max-width: 540px) {
+    .SmsTitle {
+        font-size: 1.6rem;
+    }
+
+    .SmsTitleContainer {
+        top: 120px;
+        gap: 0.5rem !important;
+    }
+
+    .changeGap {
+        gap: 0.3rem !important;
+        font-size: 0.4rem !important;
+    }
+
+    .titleSavjet {
+        font-size: 0.8rem !important;
+    }
+
+    .titleLogo {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .joinPadding {
+        padding: 4px 18px;
+        font-size: 0.8rem !important;
+    }
+
+    .marginResponsive {
+        margin-right: 0.9rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobileS {
+        padding: 15px 15px !important;
+    }
+
+    .SmsTitle {
+        font-size: 1.4rem;
+    }
+
+    .SmsTitleContainer {
+        top: 105px;
+        gap: 0.5rem !important;
+    }
+
+    .changeGap {
+        gap: 0.2rem !important;
+        font-size: 0.3rem !important;
+    }
+
+    .titleSavjet {
+        font-size: 0.7rem !important;
+    }
+
+    .titleLogo {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .joinPadding {
+        padding: 3px 16px;
+        font-size: 0.7rem !important;
+    }
+
+    .marginResponsive {
+        margin-right: 0.8rem !important;
+    }
+}
+
+@media (max-width: 419px) {
+    .SmsTitle {
+        font-size: 1.2rem;
+    }
+
+    .gappingContainer {
+        gap: 0.5rem !important;
+    }
+
+    .SmsTitleContainer {
+        top: 95px;
+        gap: 0.5rem !important;
+    }
+
+    .changeGap {
+        gap: 0.1rem !important;
+        font-size: 0.2rem !important;
+    }
+
+    .titleSavjet {
+        font-size: 0.6rem !important;
+    }
+
+    .titleLogo {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .joinPadding {
+        padding: 2px 14px;
+        font-size: 0.6rem !important;
+    }
+
+    .marginResponsive {
+        margin-right: 0.7rem !important;
+    }
+}
+
+@media (max-width: 419px) {
+    .SmsTitleContainer {
+        top: 100px;
+    }
+
+    .SmsTitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 378px) {
+    .SmsTitleContainer {
+        top: 85px;
+    }
+
+    .SmsTitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 307px) {
+    .SmsTitleContainer {
+        top: 70px;
+    }
+
+    .SmsTitle {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 249px) {
+    .SmsTitleContainer {
+        top: 60px;
+    }
+
+    .SmsTitle {
+        font-size: 0.7rem;
+    }
+}
