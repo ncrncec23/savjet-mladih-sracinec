@@ -191,7 +191,7 @@ nav {
 /* CSS for the main content */
 
 .moto {
-    padding: 7rem 0 !important;
+    padding: 12rem 0 !important;
 }
 
 /* CSS for the Highlighted content */
@@ -368,10 +368,6 @@ nav {
     .marginResponsive {
         margin-right: 1.4rem !important;
     }
-
-    .changeFontSize {
-        font-size: 2.5rem !important;
-    }
 }
 
 @media (max-width: 1112px) {
@@ -402,14 +398,6 @@ nav {
 
     .marginResponsive {
         margin-right: 1.3rem !important;
-    }
-
-    .changeFontSize {
-        font-size: 2.3rem !important;
-    }
-
-    .moto {
-        padding: 5rem 0 !important;
     }
 
     .h5-card {
@@ -464,13 +452,6 @@ nav {
         }
     }
 
-    .changeFontSize {
-        font-size: 2.0rem !important;
-    }
-
-    .changeFontSizeP {
-        font-size: 1rem !important;
-    }
 
     .h5-card {
         font-size: 0.9rem !important;
@@ -478,6 +459,10 @@ nav {
 
     .p-card-text {
         font-size: 0.7rem !important;
+    }
+
+    .moto {
+        padding: 11rem 0 !important;
     }
 }
 
@@ -517,18 +502,6 @@ nav {
         padding: 5px;
     }
 
-    .changeFontSize {
-        font-size: 1.6rem !important;
-    }
-
-    .changeFontSizeP {
-        font-size: 0.8rem !important;
-    }
-
-    .moto {
-        padding: 3.5rem 0 !important;
-    }
-
     .highlightedTitle {
         font-size: 1.5rem;
     }
@@ -539,6 +512,10 @@ nav {
 
     .p-card-text {
         font-size: 0.6rem !important;
+    }
+
+    .moto {
+        padding: 9rem 0 !important;
     }
 }
 
@@ -604,14 +581,13 @@ nav {
         font-size: 0.9rem !important;
     }
 
+    .changeFontSizeP {
+        margin-right: 15px !important;
+    }
+
     .titleLogo {
         width: 40px !important;
         height: 40px !important;
-    }
-
-    .joinPadding {
-        padding: 5px 20px;
-        font-size: 0.9rem !important;
     }
 
     .marginResponsive {
@@ -633,6 +609,10 @@ nav {
             transform: translateY(0);
         }
     }
+
+    .moto {
+        padding: 7rem 0 !important;
+    }
 }
 
 @media (max-width: 540px) {
@@ -645,12 +625,12 @@ nav {
         margin-right: 0.9rem !important;
     }
 
-    .changeFontSize {
-        font-size: 1.2rem !important;
-    }
-
     .highlighted-content {
         padding: 1rem;
+    }
+
+    .changeFontSizeP {
+        font-size: 1rem !important;
     }
 }
 
@@ -671,19 +651,6 @@ nav {
 
     .marginResponsive {
         margin-right: 0.8rem !important;
-    }
-
-    .changeFontSize {
-        font-size: 1.1rem !important;
-    }
-
-    .changeFontSizeP {
-        font-size: 0.6rem !important;
-        margin-right: 0.9rem !important;
-    }
-
-    .moto {
-        padding: 2.5rem 0 !important;
     }
 
     .highlightedTitle {
@@ -718,43 +685,30 @@ nav {
         margin-right: 0.7rem !important;
     }
 
-    .changeFontSize {
-        font-size: 1rem !important;
-    }
-
-    .changeFontSizeP {
-        margin-right: 0.7rem !important;
-    }
-
     .chg {
         margin-top: 0.8rem !important;
     }
 
-    .changeFontSizeP {
-        margin-right: 1rem !important;
-        font-size: 0.4rem !important;
+    .moto {
+        padding: 6.5rem 0 !important;
     }
 
     .changeFontSize {
-        font-size: 1rem !important;
+        font-size: 1.5rem !important;
     }
 }
 
 @media (max-width: 378px) {
-    .changeFontSize {
-        font-size: 0.9rem !important;
-    }
-
-    .changeFontSizeP {
-        font-size: 0.4rem !important;
-    }
-
     .h5-card {
         font-size: 0.7rem !important;
     }
 
     .p-card-text {
         font-size: 0.5rem !important;
+    }
+
+    .moto {
+        padding: 5rem 0 !important;
     }
 }
 
@@ -764,16 +718,7 @@ nav {
     }
 }
 
-@media (max-width: 336px) {
-    .changeFontSize {
-        font-size: 0.8rem !important;
-    }
-}
-
 @media (max-width: 307px) {
-    .moto {
-        padding: 2rem 0 !important;
-    }
 
     .SmsTitle {
         font-size: 1.7rem;
