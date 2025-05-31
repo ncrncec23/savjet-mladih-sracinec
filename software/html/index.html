@@ -15,12 +15,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Google Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/design.css">
     <!-- Favicon -->
     <link rel="icon" href="../../images/SMS_icon.ico" type="image/x-icon">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Naslovnica</title>
 </head>
 
@@ -45,40 +52,68 @@
                     <!-- This is hamburger menu-->
                     <button class="btn d-block d-sm-none p-0" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasExample">
-                        <i class="fa fa-bars" style="font-size: 1.3rem; color: white;"></i>
+                        <i class="fa fa-bars" style="font-size: 1.3rem; color: rgba(237, 203, 177, 1);"></i>
                     </button>
 
                     <div class=" offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                        aria-labelledby="offcanvasExampleLabel">
+                        aria-labelledby="offcanvasExampleLabel"
+                        style="background: linear-gradient(#7A3231, #332929 70%, black 100%); width: 250px;">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+                            <h5 class="offcanvas-title roboto-slab" id="offcanvasExampleLabel" style="color: #ffffff">
+                                Navigacija</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                                style="background-color: white;"></button>
                         </div>
-                        <div class="offcanvas-body">
+                        <div class="offcanvas-body ps-0 pe-0">
                             <div>
-                                Some text as placeholder. In real life you can have the elements you have chosen.
-                                Like,
-                                text, images, lists, etc.
-                            </div>
-                            <div class="dropdown mt-3">
-                                <button class="btn btn-secondary dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown">
-                                    Dropdown button
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul
+                                    class="list-unstyled d-flex flex-column gap-2 justify-content-center align-items-center">
+                                    <li
+                                        class="d-flex flex-row align-items-center gap-2 w-100 makePadding curHmbPage roboto-slab">
+                                        <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">NASLOVNICA</a>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center gap-2 w-100 makePadding roboto-slab">
+                                        <i class="fa-solid fa-calendar" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">DOGAĐAJI</a>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center gap-2 w-100 makePadding roboto-slab">
+                                        <i class="fa-solid fa-users" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">O NAMA</a>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center gap-2 w-100 makePadding roboto-slab">
+                                        <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">KONTAKT</a>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center gap-2 w-100 makePadding roboto-slab">
+                                        <i class="fa-solid fa-image" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">GALERIJA</a>
+                                    </li>
+                                    <li
+                                        class="d-flex flex-row align-items-center gap-2 w-100 makePadding goldNavLink roboto-slab">
+                                        <i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">PRIDRUŽI SE</a>
+                                    </li>
                                 </ul>
                             </div>
+                            <!--<div
+                                class="socialMedia d-flex flex-row justify-content-center align-items-center gap-3 mt-4">
+                                <i class="bi bi-facebook"
+                                    style="color: #1877F2; border-radius: 10px; padding: 6px 10px; background-color: rgba(255, 255, 255, 1)"></i>
+                                <i class="bi bi-instagram"
+                                    style="color: #E1306C; border-radius: 10px; padding: 6px 10px; background-color: rgba(255, 255, 255, 1)"></i>
+                                <i class="bi bi-tiktok"
+                                    style="color: black; border-radius: 10px; padding: 6px 10px; background-color: rgba(255, 255, 255, 1)"></i>
+                                <i class="bi bi-envelope"
+                                    style="color: #D93025; border-radius: 10px; padding: 6px 10px; background-color: rgba(255, 255, 255, 1)"></i>
+                            </div>-->
                         </div>
                     </div>
                     <div class="me-4 marginResponsive d-none d-sm-block">
                         <ul
                             class="list-unstyled d-flex flex-row justify-content-end align-items-center gap-4 mb-0 changeGap">
                             <li><a href="#" class="text-reset text-decoration-none navigationLink li-color"
-                                    style="color: #AD2523 !important;">Naslovnica</a>
+                                    style="color: #E10501 !important; font-weight: bold;">Naslovnica</a>
                             </li>
                             <li><a href="#" class="text-reset text-decoration-none navigationLink li-color">Događaji</a>
                             </li>
@@ -97,13 +132,12 @@
             </nav>
             <div
                 class="position-absolute d-flex flex-column justify-content-center w-100 SmsTitleContainer container-fluid gap-4">
-                <h2 class="SmsTitle text-center">SAVJET MLADIH OPĆINE SRAČINEC</h2>
+                <h2 class="SmsTitle text-center animate-text">SAVJET MLADIH OPĆINE SRAČINEC</h2>
                 <div class="d-flex justify-content-center align-items-center">
                     <a href="#"
-                        class="text-reset text-decoration-none navigationLink fs-2 d-flex align-items-center gap-3 joinPadding"
+                        class="text-reset text-decoration-none navigationLink fs-3 d-flex align-items-center gap-3 joinPadding"
                         style="color: white !important;">Pridruži
                         se
-
                     </a>
                 </div>
             </div>
@@ -111,7 +145,292 @@
     </header>
     <!-- This is main content region -->
     <main>
+        <div class="main-wrapper">
+            <!-- Moto content -->
+            <div class="container moto">
+                <div>
+                    <h3 class="display-5 fw-bold text-body-emphasis text-center changeFontSize roboto-slab"
+                        style="color: rgba(237, 203, 177, 1) !important;">
+                        “Savjet mladih stvara
+                        prostor za
+                        zabavu i nova
+                        prijateljstva!”</h3>
+                    <div class="col-lg-6 mx-auto text-end w-100 mt-4 chg">
+                        <p class="lead mb-0 roboto changeFontSizeP" style="color: rgba(237, 203, 177, 1) !important;">
+                            Nikola
+                            Kelc,
+                            predsjednik savjeta</p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Highlighted content -->
+            <div class="highlighted-content">
+                <div>
+                    <h3 style="color: rgba(237, 203, 177, 1);" class="pb-0 m-0 highlightedTitle">Izdvojeno
+                    </h3>
+                    <div class="line p-0 mt-3"></div>
+                </div>
+                <div class="container-fluid mt-4">
+                    <div class="row mb-3">
+                        <!-- Card 1 -->
+                        <div class="col-md-4 myCard">
+                            <img src="../../images/Prvi_Srakarski_Kviz.png" class="card-img-top" alt="..."
+                                style="background-color: black; border-radius: 12px;">
+                            <div class="card-body ps-2 pt-3">
+                                <h5 class="card-title roboto-slab fs-4" style="color: rgba(237, 203, 177, 1);">Prvi
+                                    Srakarski
+                                    kviz</h5>
+                                <p class="card-text roboto-slab-light mt-3"
+                                    style="color: rgba(237, 203, 177, 1); font-size: 0.9rem !important;">
+                                    <span class="roboto-slab me-2" style="font-weight: bold;">Objavljeno:</span> 31.
+                                    travnja
+                                    2025.
+                                </p>
+                                <p class="card-text roboto-slab-light mt-3"
+                                    style="color: rgba(237, 203, 177, 1); font-size: 0.9rem !important;">
+                                    Pozivamo vas na prvi Srakarski kviz! <br>
+                                    Savjet mladih
+                                    Sračinec organizira kviz o Općini Sračinec, testirajte svoje znanje o prošlosti i
+                                    sadašnjosti našeg kraja! Čekaju vas nagrade za najbolje! Prijavite se!</p>
+                                <p class="card-text roboto-slab-light mt-3"
+                                    style="color: rgba(237, 203, 177, 1); font-size: 0.9rem !important;">
+                                    <span class="roboto-slab me-2" style="font-weight: bold;"> <i
+                                            class="fa-solid fa-calendar me-2" style="color: #A47A1E;"></i>Datum
+                                        i vrijeme: </span> 31. svibnja 2025. u 19.00 h
+                                </p>
+                                <p class="card-text roboto-slab-light mt-3"
+                                    style="color: rgba(237, 203, 177, 1); font-size: 0.9rem !important;">
+                                    <span class="roboto-slab me-2" style="font-weight: bold;"><i
+                                            class="fa-solid fa-location-dot me-2" style="color: #A47A1E;"></i>Lokacija:
+                                    </span> Dom kulture
+                                    Općine
+                                    Sračinec
+                                </p>
+                                <a href="#" class="btn btnJoinUS" style="font-size: 0.9rem !important;">Prijavi se</a>
+                                <a href="#" class="btn btnReadMore" style="font-size: 0.9rem !important;">Pročitaj
+                                    više...</a>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-md-4 myCard">
+                            <img src="../../images/Sinovi_Domovine.png" class="card-img-top" alt="...">
+                            <div class="card-body ps-2 pt-3">
+                                <h5 class="card-title roboto-slab fs-4" style="color: rgba(237, 203, 177, 1);">Skupština
+                                    Sinova domovine</h5>
+                                <p class="card-text roboto-slab-light mt-3"
+                                    style="color: rgba(237, 203, 177, 1); font-size: 0.9rem !important;">
+                                    <span class="roboto-slab me-2" style="font-weight: bold;">Objavljeno:</span> 6.
+                                    travnja
+                                    2025.
+                                </p>
+                                <p class="card-text roboto-slab-light mt-3"
+                                    style="color: rgba(237, 203, 177, 1); font-size: 0.9rem !important;">
+                                    Neki članovi Savjeta mladih Sračinec imali su čast prisustvovati godišnjoj skupštini
+                                    Udruge hrvatskih branitelja Sinovi domovine. Bila je to prilika da izrazimo
+                                    poštovanje prema onima koji su svojim doprinosom obilježili ključne trenutke
+                                    hrvatske povijesti.</p>
+                                <p class="card-text roboto-slab-light mt-3"
+                                    style="color: rgba(237, 203, 177, 1); font-size: 0.9rem !important;">
+                                    <span class="roboto-slab me-2" style="font-weight: bold;"> <i
+                                            class="fa-solid fa-calendar me-2" style="color: #A47A1E;"></i>Datum
+                                        i vrijeme: </span> 5. travnja 2025.
+                                </p>
+                                <p class="card-text roboto-slab-light mt-3"
+                                    style="color: rgba(237, 203, 177, 1); font-size: 0.9rem !important;">
+                                    <span class="roboto-slab me-2"
+                                        style="font-weight: bold; font-size: 0.8rem !important;"><i
+                                            class="fa-solid fa-location-dot me-2" style="color: #A47A1E;"></i>Lokacija:
+                                    </span> Dom kulture
+                                    Općine
+                                    Sračinec
+                                </p>
+                                <a href="#" class="btn btnReadMore" style="font-size: 0.9rem !important;">Pročitaj
+                                    više...</a>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-md-4 myCard">
+                            <img src="../../images/SretanUsrks.png" class="card-img-top" alt="..."
+                                style="background-color: black; border-radius: 12px;">
+                            <div class="card-body ps-2 pt-3">
+                                <h5 class="card-title roboto-slab fs-4" style="color: rgba(237, 203, 177, 1);">Sretan
+                                    Uskrs!</h5>
+                                <p class="card-text roboto-slab-light mt-3"
+                                    style="color: rgba(237, 203, 177, 1); font-size: 0.9rem !important;">
+                                    <span class="roboto-slab me-2" style="font-weight: bold;">Objavljeno:</span> 20.
+                                    travnja
+                                    2025.
+                                </p>
+                                <p class="card-text roboto-slab-light mt-3"
+                                    style="color: rgba(237, 203, 177, 1); font-size: 0.9rem !important;">
+                                    Sretan Uskrs! <br>
+                                    Savjet mladih Sračinec želi svim mještanima Općine Sračinec sretan i
+                                    blagoslovljen Uskrs!
+                                    Neka vam ovi uskrsni dani donesu mir, radost i zajedništvo u krugu obitelji i
+                                    najmilijih.</p>
+                                <a href="#" class="btn btnReadMore" style="font-size: 0.9rem !important;">Pročitaj
+                                    više...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News content -->
+            <div class="news-content">
+                <div>
+                    <h3 style="color: rgba(237, 203, 177, 1);" class="pb-0 m-0 highlightedTitle">Vijesti
+                    </h3>
+                    <div class="line-news p-0 mt-3"></div>
+                </div>
+                <div class="container-fluid mt-4">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-md-6 mb-4 hoverOnImage">
+                            <a href="">
+                                <div class="card text-white border-0" style="background-color: transparent;">
+                                    <div class="position-relative equal-card card-hover-wrapper">
+                                        <img src="../../images/VelikaGraba.jpeg" class="card-img roundTheCorners"
+                                            alt="Naslov 1">
+                                        <div class="card-img-overlay d-flex align-items-end p-0 ">
+                                            <div
+                                                class="w-100 p-3 roundTheCornersbottom d-flex flex-column justify-content-center">
+                                                <h5 class="card-title mb-1 text-center roboto-slab h5-card">Savjet
+                                                    mladih Sračinec
+                                                    najavljuje
+                                                    koncert u
+                                                    parku Velika Graba!
+                                                </h5>
+                                                <div class="hover-text mt-3 roboto-slab">
+                                                    <p class="p-card-text">
+                                                        Pod pokroviteljstvom Savjeta mladih Općine Sračinec, Osnovna
+                                                        škola Sračinec pokrenula je projekt usmjeren na internetsku
+                                                        sigurnost i prevenciju cyberbullyinga.
+                                                        Kroz radionice, predavanja i suradnju s roditeljima, učenici uče
+                                                        kako prepoznati rizike digitalnog svijeta, zaštititi svoje
+                                                        podatke i reagirati na elektroničko nasilje.
+                                                        Cilj programa je razviti odgovorno ponašanje na internetu,
+                                                        potaknuti kulturu poštovanja u online komunikaciji i stvoriti
+                                                        sigurnije školsko i virtualno okruženje.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-md-6 mb-4 hoverOnImage">
+                            <a href="">
+                                <div class="card text-white border-0" style="background-color: transparent;">
+                                    <div class="position-relative equal-card card-hover-wrapper">
+                                        <img src="../../images/sracinec-13.jpg" class="card-img roundTheCorners"
+                                            alt="Naslov 2">
+                                        <div class="card-img-overlay d-flex align-items-end p-0">
+                                            <div
+                                                class="w-100 p-3 roundTheCornersbottom d-flex flex-column justify-content-center">
+                                                <h5 class="card-title mb-1 text-center roboto-slab h5-card">Večer
+                                                    društvenih igara u
+                                                    Domu
+                                                    kulture
+                                                    Sračinec!
+                                                </h5>
+                                                <div class="hover-text mt-3 roboto-slab">
+                                                    <p class="p-card-text">
+                                                        Pod pokroviteljstvom Savjeta mladih Općine Sračinec, Osnovna
+                                                        škola Sračinec pokrenula je projekt usmjeren na internetsku
+                                                        sigurnost i prevenciju cyberbullyinga.
+                                                        Kroz radionice, predavanja i suradnju s roditeljima, učenici uče
+                                                        kako prepoznati rizike digitalnog svijeta, zaštititi svoje
+                                                        podatke i reagirati na elektroničko nasilje.
+                                                        Cilj programa je razviti odgovorno ponašanje na internetu,
+                                                        potaknuti kulturu poštovanja u online komunikaciji i stvoriti
+                                                        sigurnije školsko i virtualno okruženje.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-md-6 mb-4 hoverOnImage">
+                            <a href="">
+                                <div class="card text-white border-0" style="background-color: transparent;">
+                                    <div class="position-relative equal-card card-hover-wrapper">
+                                        <img src="../../images/Sracinec-2018.jpg" class="card-img roundTheCorners"
+                                            alt="Naslov 2">
+                                        <div class="card-img-overlay d-flex align-items-end p-0">
+                                            <div
+                                                class="w-100 p-3 roundTheCornersbottom d-flex flex-column justify-content-center">
+                                                <h5 class="card-title mb-1 text-center roboto-slab h5-card">Kino u parku
+                                                    Velika Graba
+                                                    – hit
+                                                    dana u
+                                                    Sračincu!
+                                                </h5>
+                                                <div class="hover-text mt-3 roboto-slab">
+                                                    <p class="p-card-text">
+                                                        Pod pokroviteljstvom Savjeta mladih Općine Sračinec, Osnovna
+                                                        škola Sračinec pokrenula je projekt usmjeren na internetsku
+                                                        sigurnost i prevenciju cyberbullyinga.
+                                                        Kroz radionice, predavanja i suradnju s roditeljima, učenici uče
+                                                        kako prepoznati rizike digitalnog svijeta, zaštititi svoje
+                                                        podatke i reagirati na elektroničko nasilje.
+                                                        Cilj programa je razviti odgovorno ponašanje na internetu,
+                                                        potaknuti kulturu poštovanja u online komunikaciji i stvoriti
+                                                        sigurnije školsko i virtualno okruženje.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-md-6 mb-4 hoverOnImage">
+                            <a href="">
+                                <div class="card text-white border-0" style="background-color: transparent;">
+                                    <div class="position-relative equal-card card-hover-wrapper">
+                                        <img src="../../images/Općina.jpg" class="card-img roundTheCorners"
+                                            alt="Naslov 2">
+                                        <div class="card-img-overlay d-flex align-items-end p-0">
+                                            <div
+                                                class="w-100 p-3 roundTheCornersbottom d-flex flex-column justify-content-center">
+                                                <h5 class="card-title mb-1 text-center roboto-slab h5-card">Internetska
+                                                    sigurnost i
+                                                    cyber
+                                                    bullying –
+                                                    fokus
+                                                    Osnovne škole Sračinec</h5>
+                                                <div class="hover-text mt-3 roboto-slab">
+                                                    <p class="p-card-text">
+                                                        Pod pokroviteljstvom Savjeta mladih Općine Sračinec, Osnovna
+                                                        škola Sračinec pokrenula je projekt usmjeren na internetsku
+                                                        sigurnost i prevenciju cyberbullyinga.
+                                                        Kroz radionice, predavanja i suradnju s roditeljima, učenici uče
+                                                        kako prepoznati rizike digitalnog svijeta, zaštititi svoje
+                                                        podatke i reagirati na elektroničko nasilje.
+                                                        Cilj programa je razviti odgovorno ponašanje na internetu,
+                                                        potaknuti kulturu poštovanja u online komunikaciji i stvoriti
+                                                        sigurnije školsko i virtualno okruženje.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
     <!-- This is footer region -->
     <footer>

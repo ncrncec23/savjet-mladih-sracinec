@@ -13,6 +13,15 @@ header {
     margin: 0 auto;
 }
 
+main {
+    background-color: rgba(122, 50, 49, 1);
+}
+
+.main-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 h1 {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
@@ -28,7 +37,7 @@ h1 {
 }
 
 .overlay {
-    background: linear-gradient(rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.7) 95%);
+    background: linear-gradient(rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.5) 95%);
     pointer-events: none;
     z-index: 0;
 }
@@ -117,7 +126,7 @@ nav {
     bottom: 0;
     width: 0%;
     height: 2px;
-    background-color: #AD2523;
+    background-color: #E10501;
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -126,7 +135,213 @@ nav {
     width: 100%;
 }
 
-/* Media Queries header */
+.hamb {
+    font-size: 1rem;
+    color: white !important;
+    padding: 5px 5px;
+}
+
+.makePadding {
+    padding: 0 20px;
+}
+
+.curHmbPage {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.goldNavLink {
+    background-color: #A47A1E !important;
+}
+
+.roboto-slab {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-slab-light {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-text {
+    animation: fadeSlideIn 2s ease-out forwards;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* CSS for the main content */
+
+.moto {
+    padding: 7rem 0 !important;
+}
+
+/* CSS for the Highlighted content */
+
+.highlighted-content {
+    background-color: #332929;
+    padding: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #AD2523;
+    margin: 1rem 0;
+}
+
+.highlightedTitle {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(237, 203, 177, 1);
+    font-size: 2rem;
+}
+
+.container-fluid-highlighted {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.btnJoinUS {
+    background-color: #AD2523;
+    color: white !important;
+}
+
+.btnJoinUS:hover {
+    background-color: #A47A1E !important;
+    color: white !important;
+}
+
+.btnReadMore {
+    background-color: #7A3231;
+    color: white !important;
+}
+
+.btnReadMore:hover {
+    background-color: #A47A1E !important;
+    color: white !important;
+}
+
+@keyframes myCardHover {
+    0% {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+}
+
+.myCard {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.myCard:hover {
+    animation: myCardHover 0.3s ease-in-out forwards;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.news-content {
+    padding: 2rem;
+}
+
+.line-news {
+    width: 100%;
+    height: 2px;
+    background-color: #A47A1E;
+    margin: 1rem 0;
+}
+
+.roundTheCorners {
+    border-radius: 10px;
+}
+
+.hoverOnImage:hover .roundTheCornersbottom {
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.roundTheCornersbottom {
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 30%;
+    transition: height 0.6s ease;
+}
+
+.equal-card {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.hover-text {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+.card-hover-wrapper:hover .hover-text {
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+    overflow-y: auto;
+}
+
+.hover-text {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.hover-text::-webkit-scrollbar {
+    display: none;
+}
+
+.h5-card {
+    font-size: 1.5rem !important;
+}
+
+/* Media Queries */
 
 @media (max-width: 1277px) {
     .SmsTitle {
@@ -156,6 +371,10 @@ nav {
 
     .marginResponsive {
         margin-right: 1.4rem !important;
+    }
+
+    .changeFontSize {
+        font-size: 2.5rem !important;
     }
 }
 
@@ -188,6 +407,22 @@ nav {
     .marginResponsive {
         margin-right: 1.3rem !important;
     }
+
+    .changeFontSize {
+        font-size: 2.3rem !important;
+    }
+
+    .moto {
+        padding: 5rem 0 !important;
+    }
+
+    .h5-card {
+        font-size: 1.2rem !important;
+    }
+
+    .p-card-text {
+        font-size: 0.9rem !important;
+    }
 }
 
 @media (max-width: 996px) {
@@ -219,6 +454,34 @@ nav {
 
     .marginResponsive {
         margin-right: 1.2rem !important;
+    }
+
+    @keyframes fadeSlideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .changeFontSize {
+        font-size: 2.0rem !important;
+    }
+
+    .changeFontSizeP {
+        font-size: 1rem !important;
+    }
+
+    .h5-card {
+        font-size: 0.9rem !important;
+    }
+
+    .p-card-text {
+        font-size: 0.7rem !important;
     }
 }
 
@@ -257,6 +520,30 @@ nav {
     .buttonJoinUs {
         padding: 5px;
     }
+
+    .changeFontSize {
+        font-size: 1.6rem !important;
+    }
+
+    .changeFontSizeP {
+        font-size: 0.8rem !important;
+    }
+
+    .moto {
+        padding: 3.5rem 0 !important;
+    }
+
+    .highlightedTitle {
+        font-size: 1.5rem;
+    }
+
+    .h5-card {
+        font-size: 0.8rem !important;
+    }
+
+    .p-card-text {
+        font-size: 0.6rem !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -294,6 +581,16 @@ nav {
 
     .marginResponsive {
         margin-right: 1.1rem !important;
+    }
+}
+
+@media (max-width: 767.27px) {
+    .h5-card {
+        font-size: 1.2rem !important;
+    }
+
+    .p-card-text {
+        font-size: 0.9rem !important;
     }
 }
 
@@ -337,11 +634,32 @@ nav {
     .marginResponsive {
         margin-right: 0.2rem !important;
     }
+
+    @keyframes fadeSlideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 }
 
 @media (max-width: 648px) {
     .SmsTitleContainer {
         top: 130px;
+    }
+
+    .changeFontSize {
+        font-size: 1.4rem !important;
+    }
+
+    .changeFontSizeP {
+        font-size: 0.7rem !important;
+        margin-right: 2rem !important;
     }
 }
 
@@ -377,9 +695,26 @@ nav {
     .marginResponsive {
         margin-right: 0.9rem !important;
     }
+
+    .changeFontSize {
+        font-size: 1.2rem !important;
+    }
+
+    .highlighted-content {
+        padding: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
+
+    .h5-card {
+        font-size: 0.8rem !important;
+    }
+
+    .p-card-text {
+        font-size: 0.6rem !important;
+    }
+
     .mobileS {
         padding: 15px 15px !important;
     }
@@ -414,6 +749,31 @@ nav {
 
     .marginResponsive {
         margin-right: 0.8rem !important;
+    }
+
+    .changeFontSize {
+        font-size: 1.1rem !important;
+    }
+
+    .changeFontSizeP {
+        font-size: 0.6rem !important;
+        margin-right: 0.9rem !important;
+    }
+
+    .moto {
+        padding: 2.5rem 0 !important;
+    }
+
+    .highlightedTitle {
+        font-size: 1rem;
+    }
+
+    .line {
+        margin: 0.5rem 0;
+    }
+
+    .mt-3 {
+        margin-top: 0.5rem !important;
     }
 }
 
@@ -453,35 +813,91 @@ nav {
     .marginResponsive {
         margin-right: 0.7rem !important;
     }
+
+    .changeFontSize {
+        font-size: 1rem !important;
+    }
+
+    .changeFontSizeP {
+        margin-right: 0.7rem !important;
+    }
+
+    .chg {
+        margin-top: 0.8rem !important;
+    }
 }
 
 @media (max-width: 419px) {
     .SmsTitleContainer {
-        top: 100px;
+        top: 90px;
     }
 
     .SmsTitle {
         font-size: 1.2rem;
+    }
+
+    .changeFontSizeP {
+        margin-right: 1rem !important;
+    }
+
+    .changeFontSize {
+        font-size: 1rem !important;
+    }
+
+    .changeFontSizeP {
+        font-size: 0.4rem !important;
     }
 }
 
 @media (max-width: 378px) {
     .SmsTitleContainer {
         top: 85px;
+        gap: 0.2rem !important;
     }
 
     .SmsTitle {
         font-size: 1rem;
+    }
+
+    .changeFontSize {
+        font-size: 0.9rem !important;
+    }
+
+    .changeFontSizeP {
+        font-size: 0.4rem !important;
+    }
+
+    .news-content {
+        padding: 1rem;
+    }
+
+    .h5-card {
+        font-size: 0.7rem !important;
+    }
+
+    .p-card-text {
+        font-size: 0.5rem !important;
+    }
+}
+
+@media (max-width: 336px) {
+    .changeFontSize {
+        font-size: 0.8rem !important;
     }
 }
 
 @media (max-width: 307px) {
     .SmsTitleContainer {
         top: 70px;
+        gap: 0 !important;
     }
 
     .SmsTitle {
         font-size: 0.8rem;
+    }
+
+    .moto {
+        padding: 2rem 0 !important;
     }
 }
 
@@ -492,5 +908,21 @@ nav {
 
     .SmsTitle {
         font-size: 0.7rem;
+    }
+
+    .joinPadding {
+        padding: 1px 12px;
+        font-size: 0.5rem !important;
+    }
+}
+
+/* Media queries for bigger devices */
+@media (min-width: 1600px) {
+    .h5-card {
+        font-size: 2rem !important;
+    }
+
+    .p-card-text {
+        font-size: 1.2rem !important;
     }
 }
