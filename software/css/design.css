@@ -4,10 +4,6 @@ body {
     background-color: rgba(122, 50, 49, 1);
 }
 
-header {
-    background-color: black;
-}
-
 .header-wrapper {
     max-width: 1920px;
     margin: 0 auto;
@@ -595,16 +591,7 @@ nav {
 }
 
 @media (max-width: 648px) {
-    .SmsTitle {
-        font-size: 1.8rem;
-    }
-
     .navigationLink {
-        gap: 0.5rem !important;
-    }
-
-    .SmsTitleContainer {
-        top: 150px;
         gap: 0.5rem !important;
     }
 
@@ -648,48 +635,10 @@ nav {
     }
 }
 
-@media (max-width: 648px) {
-    .SmsTitleContainer {
-        top: 130px;
-    }
-
-    .changeFontSize {
-        font-size: 1.4rem !important;
-    }
-
-    .changeFontSizeP {
-        font-size: 0.7rem !important;
-        margin-right: 2rem !important;
-    }
-}
-
 @media (max-width: 540px) {
-    .SmsTitle {
-        font-size: 1.6rem;
-    }
-
-    .SmsTitleContainer {
-        top: 120px;
-        gap: 0.5rem !important;
-    }
-
     .changeGap {
         gap: 0.3rem !important;
         font-size: 0.4rem !important;
-    }
-
-    .titleSavjet {
-        font-size: 0.8rem !important;
-    }
-
-    .titleLogo {
-        width: 35px !important;
-        height: 35px !important;
-    }
-
-    .joinPadding {
-        padding: 4px 18px;
-        font-size: 0.8rem !important;
     }
 
     .marginResponsive {
@@ -715,36 +664,9 @@ nav {
         font-size: 0.6rem !important;
     }
 
-    .mobileS {
-        padding: 15px 15px !important;
-    }
-
-    .SmsTitle {
-        font-size: 1.4rem;
-    }
-
-    .SmsTitleContainer {
-        top: 105px;
-        gap: 0.5rem !important;
-    }
-
     .changeGap {
         gap: 0.2rem !important;
         font-size: 0.3rem !important;
-    }
-
-    .titleSavjet {
-        font-size: 0.7rem !important;
-    }
-
-    .titleLogo {
-        width: 30px !important;
-        height: 30px !important;
-    }
-
-    .joinPadding {
-        padding: 3px 16px;
-        font-size: 0.7rem !important;
     }
 
     .marginResponsive {
@@ -775,39 +697,21 @@ nav {
     .mt-3 {
         margin-top: 0.5rem !important;
     }
+
+    .news-content {
+        padding: 1rem;
+    }
 }
 
 @media (max-width: 419px) {
-    .SmsTitle {
-        font-size: 1.2rem;
-    }
 
     .gappingContainer {
-        gap: 0.5rem !important;
-    }
-
-    .SmsTitleContainer {
-        top: 95px;
         gap: 0.5rem !important;
     }
 
     .changeGap {
         gap: 0.1rem !important;
         font-size: 0.2rem !important;
-    }
-
-    .titleSavjet {
-        font-size: 0.6rem !important;
-    }
-
-    .titleLogo {
-        width: 25px !important;
-        height: 25px !important;
-    }
-
-    .joinPadding {
-        padding: 2px 14px;
-        font-size: 0.6rem !important;
     }
 
     .marginResponsive {
@@ -825,50 +729,24 @@ nav {
     .chg {
         margin-top: 0.8rem !important;
     }
-}
-
-@media (max-width: 419px) {
-    .SmsTitleContainer {
-        top: 90px;
-    }
-
-    .SmsTitle {
-        font-size: 1.2rem;
-    }
 
     .changeFontSizeP {
         margin-right: 1rem !important;
+        font-size: 0.4rem !important;
     }
 
     .changeFontSize {
         font-size: 1rem !important;
     }
-
-    .changeFontSizeP {
-        font-size: 0.4rem !important;
-    }
 }
 
 @media (max-width: 378px) {
-    .SmsTitleContainer {
-        top: 85px;
-        gap: 0.2rem !important;
-    }
-
-    .SmsTitle {
-        font-size: 1rem;
-    }
-
     .changeFontSize {
         font-size: 0.9rem !important;
     }
 
     .changeFontSizeP {
         font-size: 0.4rem !important;
-    }
-
-    .news-content {
-        padding: 1rem;
     }
 
     .h5-card {
@@ -880,6 +758,12 @@ nav {
     }
 }
 
+@media(max-width: 344px) {
+    .SmsTitle {
+        font-size: 1.9rem;
+    }
+}
+
 @media (max-width: 336px) {
     .changeFontSize {
         font-size: 0.8rem !important;
@@ -887,29 +771,16 @@ nav {
 }
 
 @media (max-width: 307px) {
-    .SmsTitleContainer {
-        top: 70px;
-        gap: 0 !important;
+    .moto {
+        padding: 2rem 0 !important;
     }
 
     .SmsTitle {
-        font-size: 0.8rem;
-    }
-
-    .moto {
-        padding: 2rem 0 !important;
+        font-size: 1.7rem;
     }
 }
 
 @media (max-width: 249px) {
-    .SmsTitleContainer {
-        top: 60px;
-    }
-
-    .SmsTitle {
-        font-size: 0.7rem;
-    }
-
     .joinPadding {
         padding: 1px 12px;
         font-size: 0.5rem !important;
