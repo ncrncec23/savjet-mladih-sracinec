@@ -419,7 +419,6 @@ footer::after {
 
 .blurred-section {
     position: relative;
-    background: url('your-background.jpg') center/cover no-repeat;
     z-index: 0;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
