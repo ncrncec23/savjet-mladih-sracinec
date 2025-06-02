@@ -18,6 +18,7 @@ main {
     margin: 0 auto;
 }
 
+
 h1 {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
@@ -337,6 +338,142 @@ nav {
     font-size: 1.5rem !important;
 }
 
+.moto_background {
+    position: relative;
+    width: 100%;
+    min-height: 283.2px;
+    /* ili koliko želiš */
+    overflow: hidden;
+}
+
+.moto_background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url(../../images/OPĆINA-SRAČINEC-naslovna\ 2.png) no-repeat center center;
+    background-size: cover;
+    z-index: 0;
+    opacity: 1;
+}
+
+.overlay_moto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.container.moto {
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer CSS code */
+
+.footerText {
+    padding: 40px 0;
+    gap: 4rem;
+}
+
+footer {
+    position: relative;
+    background-image: url(../../images/sracinec-13.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.socialMediaIcons {
+    padding-top: 30px;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    transform: scale(1.1);
+    z-index: -2;
+}
+
+footer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.blurred-section {
+    position: relative;
+    background: url('your-background.jpg') center/cover no-repeat;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.blurred-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.sponsors-section {
+    background-color: inherit;
+    overflow: hidden;
+}
+
+.sponsors-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.sponsors-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+    gap: 4rem;
+}
+
+.sponsors-track img {
+    height: 200px;
+    object-fit: contain;
+    opacity: 0.85;
+    transition: transform 0.3s ease;
+}
+
+.sponsors-track img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 /* Media Queries */
 
 @media (max-width: 1277px) {
@@ -564,6 +701,14 @@ nav {
 
     .p-card-text {
         font-size: 0.9rem !important;
+    }
+
+    .moto_background::after {
+        width: 100%;
+    }
+
+    .overlay_moto {
+        width: 100%;
     }
 }
 
