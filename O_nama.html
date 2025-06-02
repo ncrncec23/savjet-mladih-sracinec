@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Google Font EB Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <!-- Google Font Roboto Slab -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Google Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="software/css/design.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/SMS_icon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>O nama</title>
+    <!-- SEO Optimization -->
+    <meta name="description"
+        content="Službena stranica Savjeta mladih Općine Sračinec. Pridruži se, saznaj više o događajima i kontaktiraj nas.">
+    <meta name="keywords" content="Savjet mladih, Sračinec, događaji, mladi, općina, kontakt">
+    <meta name="author" content="Savjet mladih Sračinec">
+</head>
+
+<body>
+    <!-- This is header region -->
+    <header>
+        <div class="image-container header-wrapper">
+            <img src="images/Savjet_mladih_2.jpg" alt="BannerSračinec" class="w-100 object-fit-cover"
+                style="max-height: 750px; min-height: 400px;">
+            <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+            <nav class="position-absolute top-0 start-0 w-100">
+                <!-- This is navigation bar -->
+                <div class="container-fluid d-flex justify-content-between align-items-center py-4 px-4 mobileS">
+                    <div class="gaping">
+                        <a href="index.html"
+                            class="d-flex flex-row align-items-center text-decoration-none text-reset gap-4 gappingContainer">
+                            <img src="images/SMS_LOGO.png" alt="SMS_LOGO" class="img-fluid titleLogo"
+                                style="max-width: 90px;">
+                            <h1 class="fs-2 titleSavjet">Savjet mladih Sračinec</h1>
+                        </a>
+                    </div>
+                    <!-- This is hamburger menu-->
+                    <button class="btn d-block d-sm-none p-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample">
+                        <i class="fa fa-bars" style="font-size: 1.3rem; color: rgba(237, 203, 177, 1);"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel"
+                        style="background: linear-gradient(#7A3231, #332929 70%, black 100%); width: 250px;">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title roboto-slab" id="offcanvasExampleLabel" style="color: #ffffff">
+                                Navigacija</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                                style="background-color: white;"></button>
+                        </div>
+                        <div class="offcanvas-body ps-0 pe-0">
+                            <div>
+                                <ul
+                                    class="list-unstyled d-flex flex-column gap-2 justify-content-center align-items-center">
+                                    <li
+                                        class="d-flex flex-row align-items-center gap-2 w-100 makePadding curHmbPage roboto-slab">
+                                        <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">NASLOVNICA</a>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center gap-2 w-100 makePadding roboto-slab">
+                                        <i class="fa-solid fa-calendar" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">DOGAĐAJI</a>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center gap-2 w-100 makePadding roboto-slab">
+                                        <i class="fa-solid fa-users" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">O NAMA</a>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center gap-2 w-100 makePadding roboto-slab">
+                                        <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">KONTAKT</a>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center gap-2 w-100 makePadding roboto-slab">
+                                        <i class="fa-solid fa-image" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">GALERIJA</a>
+                                    </li>
+                                    <li
+                                        class="d-flex flex-row align-items-center gap-2 w-100 makePadding goldNavLink roboto-slab">
+                                        <i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">PRIDRUŽI SE</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-4 marginResponsive d-none d-sm-block">
+                        <ul
+                            class="list-unstyled d-flex flex-row justify-content-end align-items-center gap-4 mb-0 changeGap">
+                            <li><a href="#"
+                                    class="text-reset text-decoration-none navigationLink li-color">Naslovnica</a>
+                            </li>
+                            <li><a href="#" class="text-reset text-decoration-none navigationLink li-color">Događaji</a>
+                            </li>
+                            <li><a href="#" class="text-reset text-decoration-none navigationLink li-color"
+                                    style="color: #E10501 !important; font-weight: bold;">O nama</a>
+                            </li>
+                            <li><a href="#" class="text-reset text-decoration-none navigationLink li-color">Kontakt</a>
+                            </li>
+                            <li><a href="#" class="text-reset text-decoration-none navigationLink li-color">Galerija</a>
+                            </li>
+                            <li class="buttonJoinUs"><a href="#" class="text-reset text-decoration-none navigationLink"
+                                    id="JoinUs">Pridruži
+                                    se</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="position-absolute d-flex flex-column justify-content-center w-100 SmsTitleContainer container-fluid gap-4"
+                style="top: 45%;">
+                <h2 class="SmsTitle text-center animate-text">MI SMO SAVJET MLADIH <br>OPČINE SRAČINEC</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container py-5">
+            <div class="row g-3">
+
+                <!-- Member -->
+                <div class="col-6 col-md-3 m-0 p-0">
+                    <div class="card text-center bg-dark text-white p-3 h-100 rounded-0">
+                        <div class="member" id="member-nikola">
+                            <div class="slide active">Nikola Kelc</div>
+                            <div class="slide">Predsjednik</div>
+                            <div class="slide">22 godine</div>
+                            <div class="slide">nikola@example.com</div>
+
+                            <div class="dots mt-2">
+                                <span class="dot active" onclick="showSlide(this, 0)"></span>
+                                <span class="dot" onclick="showSlide(this, 1)"></span>
+                                <span class="dot" onclick="showSlide(this, 2)"></span>
+                                <span class="dot" onclick="showSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 m-0 p-0">
+                    <div class="card text-center bg-light text-white p-3 h-100 rounded-0">
+                        <div class="member" id="member-nikola">
+                            <div class="slide active">Nikola Kelc</div>
+                            <div class="slide">Predsjednik</div>
+                            <div class="slide">22 godine</div>
+                            <div class="slide">nikola@example.com</div>
+
+                            <div class="dots mt-2">
+                                <span class="dot active" onclick="showSlide(this, 0)"></span>
+                                <span class="dot" onclick="showSlide(this, 1)"></span>
+                                <span class="dot" onclick="showSlide(this, 2)"></span>
+                                <span class="dot" onclick="showSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 m-0 p-0">
+                    <div class="card text-center bg-dark text-white p-3 h-100 rounded-0">
+                        <div class="member" id="member-nikola">
+                            <div class="slide active">Nikola Kelc</div>
+                            <div class="slide">Predsjednik</div>
+                            <div class="slide">22 godine</div>
+                            <div class="slide">nikola@example.com</div>
+
+                            <div class="dots mt-2">
+                                <span class="dot active" onclick="showSlide(this, 0)"></span>
+                                <span class="dot" onclick="showSlide(this, 1)"></span>
+                                <span class="dot" onclick="showSlide(this, 2)"></span>
+                                <span class="dot" onclick="showSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 m-0 p-0">
+                    <div class="card text-center bg-light text-white p-3 h-100 rounded-0">
+                        <div class="member" id="member-nikola">
+                            <div class="slide active">Nikola Kelc</div>
+                            <div class="slide">Predsjednik</div>
+                            <div class="slide">22 godine</div>
+                            <div class="slide">nikola@example.com</div>
+
+                            <div class="dots mt-2">
+                                <span class="dot active" onclick="showSlide(this, 0)"></span>
+                                <span class="dot" onclick="showSlide(this, 1)"></span>
+                                <span class="dot" onclick="showSlide(this, 2)"></span>
+                                <span class="dot" onclick="showSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 m-0 p-0">
+                    <div class="card text-center bg-dark text-white p-3 h-100 rounded-0">
+                        <div class="member" id="member-nikola">
+                            <div class="slide active">Nikola Kelc</div>
+                            <div class="slide">Predsjednik</div>
+                            <div class="slide">22 godine</div>
+                            <div class="slide">nikola@example.com</div>
+
+                            <div class="dots mt-2">
+                                <span class="dot active" onclick="showSlide(this, 0)"></span>
+                                <span class="dot" onclick="showSlide(this, 1)"></span>
+                                <span class="dot" onclick="showSlide(this, 2)"></span>
+                                <span class="dot" onclick="showSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-3 m-0 p-0">
+                    <div class="card text-center bg-light text-white p-3 h-100 rounded-0">
+                        <div class="member" id="member-nikola">
+                            <div class="slide active">Nikola Kelc</div>
+                            <div class="slide">Predsjednik</div>
+                            <div class="slide">22 godine</div>
+                            <div class="slide">nikola@example.com</div>
+
+                            <div class="dots mt-2">
+                                <span class="dot active" onclick="showSlide(this, 0)"></span>
+                                <span class="dot" onclick="showSlide(this, 1)"></span>
+                                <span class="dot" onclick="showSlide(this, 2)"></span>
+                                <span class="dot" onclick="showSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 m-0 p-0">
+                    <div class="card text-center bg-dark text-white p-3 h-100 rounded-0">
+                        <div class="member" id="member-nikola">
+                            <div class="slide active">Nikola Kelc</div>
+                            <div class="slide">Predsjednik</div>
+                            <div class="slide">22 godine</div>
+                            <div class="slide">nikola@example.com</div>
+
+                            <div class="dots mt-2">
+                                <span class="dot active" onclick="showSlide(this, 0)"></span>
+                                <span class="dot" onclick="showSlide(this, 1)"></span>
+                                <span class="dot" onclick="showSlide(this, 2)"></span>
+                                <span class="dot" onclick="showSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 m-0 p-0">
+                    <div class="card text-center bg-light text-white p-3 h-100 rounded-0">
+                        <div class="member" id="member-nikola">
+                            <div class="slide active">Nikola Kelc</div>
+                            <div class="slide">Predsjednik</div>
+                            <div class="slide">22 godine</div>
+                            <div class="slide">nikola@example.com</div>
+
+                            <div class="dots mt-2">
+                                <span class="dot active" onclick="showSlide(this, 0)"></span>
+                                <span class="dot" onclick="showSlide(this, 1)"></span>
+                                <span class="dot" onclick="showSlide(this, 2)"></span>
+                                <span class="dot" onclick="showSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-white pt-5">
+        <div class="container">
+            <div class="row text-center text-md-start justify-content-center align-items-start">
+
+                <!-- Left section: logo + description -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="d-flex flex-row align-items-center justify-content-center justify-content-md-start">
+                        <img src="images/SMS_LOGO.png" alt="SMS logo" class="rounded-circle mb-2 me-3"
+                            style="width: 100px;" />
+                        <div>
+                            <h2 class="fw-bold roboto-slab">SMS</h2>
+                            <p class="text-danger fst-italic">Savjet mladih Sračinec</p>
+                        </div>
+                    </div>
+                    <p class="mb-1">© 2025 SMS. Sva prava pridržana.</p>
+                    <p>Stojimo na usluzi za mlade mještane Općine Sračinec.</p>
+                </div>
+
+                <!-- Middle section: anchors -->
+                <div class="col-12 col-md-3 mb-4">
+                    <h5 class="fw-bold mb-3">Naslovnica</h5>
+                    <p><a href="" class="text-decoration-none text-white">O nama</a></p>
+                    <p><a href="" class="text-decoration-none text-white">Događaji</a></p>
+                    <p><a href="" class="text-decoration-none text-white">Kontakt</a></p>
+                    <p><a href="" class="text-decoration-none text-white">Galerija</a></p>
+                </div>
+
+                <!-- Right section: contact -->
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Kontaktirajte nas</h5>
+                    <p><i class="bi bi-envelope me-2"></i><a href="mailto:savjetmladihsracinec02@gmail.com"
+                            class="text-decoration-none text-white">savjetmladihsracinec02@gmail.com</a>
+                    </p>
+                    <p><i class="bi bi-telephone me-2"></i><a href="tel:+385997467731"
+                            class="text-decoration-none text-white">+385 99 746 7731</a></p>
+                    <p><i class="bi bi-geo-alt me-2"></i><a href="https://maps.app.goo.gl/S59ce9sRE3RocjRq7"
+                            class="text-decoration-none text-white"> Dom kulture
+                            Sračinec</a></p>
+                </div>
+            </div>
+
+            <!-- Social media icons -->
+            <div class=" row justify-content-center mt-3">
+                <div class="col-auto">
+                    <a href="https://www.facebook.com/profile.php?id=61573740508581" class="text-white fs-4 me-3"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/savjetmladihsracinec/" class="text-white fs-4 me-3"><i
+                            class="bi bi-instagram "></i></a>
+                    <a href="https://www.tiktok.com/@savjet_mladih_sracinec?_r=1&_d=secCgYIASAHKAESPgo8cr1CQFmqhabF0SggGTPitPRfdl0uwaBbxaBtXoDyghvfFuRNj973qMKh4O8zjbu%2BKWmRElVlhlXFV6%2FwGgA%3D&_svg=2&checksum=4bb38b8994ac5bd3ea0e5ea04175f2208ed440757510a9d75a7d67fcbb9913c2&sec_uid=MS4wLjABAAAAjMfpO1Uc-XWQjoSuV6AYJunzveo-vGgZ3H5B3EBI1XFJtUyY1Rb0SfCieKxyBRgd&sec_user_id=MS4wLjABAAAAjMfpO1Uc-XWQjoSuV6AYJunzveo-vGgZ3H5B3EBI1XFJtUyY1Rb0SfCieKxyBRgd&share_app_id=1233&share_author_id=7473417111755818006&share_link_id=FEAB26FE-D82C-4453-B1BF-DE78C694E83D&share_scene=1&sharer_language=en&social_share_type=4&source=h5_m&timestamp=1748855941&tt_from=copy&u_code=ej0ci849hjebi5&ug_btm=b8727%2Cb0&user_id=7473417111755818006&utm_campaign=client_share&utm_medium=ios&utm_source=copy"
+                        class="text-white fs-4"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom part -->
+        <div class="row mt-4">
+            <div class="col text-center py-2" style="background-color: #b8860b;">
+                <small>© 2025 Developed by Niko & Elena. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <script src="software/js/interactivity.js"></script>
+</body>
+
+</html>
