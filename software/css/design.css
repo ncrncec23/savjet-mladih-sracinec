@@ -505,6 +505,28 @@ footer::after {
     opacity: 1;
 }
 
+
+.pagination .page-link {
+    color: #332929;
+    /* boja teksta linkova */
+    background-color: #A47A1E;
+    /* pozadina */
+    border-color: #332929;
+    /* rub */
+}
+
+.pagination .page-item.active .page-link {
+    color: #A47A1E;
+    background-color: #332929;
+    border-color: #332929;
+}
+
+.pagination .page-link:hover {
+    color: #654f4f;
+    background-color: #A47A1E;
+    border-color: #654f4f;
+}
+
 /* Media Queries */
 
 @media (max-width: 1277px) {

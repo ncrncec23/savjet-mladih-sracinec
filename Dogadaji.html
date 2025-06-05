@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>O nama</title>
+    <title>Događaji</title>
     <!-- SEO Optimization -->
     <meta name="description"
         content="Službena stranica Savjeta mladih Općine Sračinec. Pridruži se, saznaj više o događajima i kontaktiraj nas.">
@@ -40,7 +40,7 @@
     <!-- This is header region -->
     <header>
         <div class="image-container header-wrapper">
-            <img src="images/Savjet_mladih_2.jpg" alt="BannerSračinec" class="w-100 object-fit-cover"
+            <img src="images/VelikaGraba.jpeg" alt="BannerSračinec" class="w-100 object-fit-cover"
                 style="max-height: 750px; min-height: 400px;">
             <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
             <nav class="position-absolute top-0 start-0 w-100">
@@ -77,13 +77,12 @@
                                         <i class="fa-solid fa-house" style="color: #ffffff;"></i>
                                         <a href="index.html" class="text-reset text-decoration-none hamb">NASLOVNICA</a>
                                     </li>
-                                    <li class="d-flex flex-row align-items-center gap-2 w-100 makePadding roboto-slab">
-                                        <i class="fa-solid fa-calendar" style="color: #ffffff;"></i>
-                                        <a href="Dogadaji.html"
-                                            class="text-reset text-decoration-none hamb">DOGAĐAJI</a>
-                                    </li>
                                     <li
                                         class="d-flex flex-row align-items-center gap-2 w-100 makePadding roboto-slab curHmbPage">
+                                        <i class="fa-solid fa-calendar" style="color: #ffffff;"></i>
+                                        <a href="" class="text-reset text-decoration-none hamb">DOGAĐAJI</a>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center gap-2 w-100 makePadding roboto-slab ">
                                         <i class="fa-solid fa-users" style="color: #ffffff;"></i>
                                         <a href="O_nama.html" class="text-reset text-decoration-none hamb ">O
                                             NAMA</a>
@@ -111,11 +110,11 @@
                             <li><a href="index.html"
                                     class="text-reset text-decoration-none navigationLink li-color">Naslovnica</a>
                             </li>
-                            <li><a href="Dogadaji.html"
-                                    class="text-reset text-decoration-none navigationLink li-color">Događaji</a>
+                            <li><a href="#" class="text-reset text-decoration-none navigationLink li-color"
+                                    style="color: #E10501 !important; font-weight: bold;">Događaji</a>
                             </li>
-                            <li><a href="O_nama.html" class="text-reset text-decoration-none navigationLink li-color"
-                                    style="color: #E10501 !important; font-weight: bold;">O nama</a>
+                            <li><a href="O_nama.html" class="text-reset text-decoration-none navigationLink li-color">O
+                                    nama</a>
                             </li>
                             <li><a href="#" class="text-reset text-decoration-none navigationLink li-color">Kontakt</a>
                             </li>
@@ -130,137 +129,163 @@
             </nav>
             <div class="position-absolute d-flex flex-column justify-content-center w-100 SmsTitleContainer container-fluid gap-4"
                 style="top: 45%;">
-                <h2 class="SmsTitle text-center animate-text">MI SMO SAVJET MLADIH <br>OPČINE SRAČINEC</h2>
+                <h2 class="SmsTitle text-center animate-text">DOGAĐAJI SAVJETA MLADIH <br>OPČINE SRAČINEC</h2>
             </div>
         </div>
     </header>
     <main>
-        <div class="container py-5">
-            <div class="row g-3">
-                <h3 class="text-center mb-4 fs-2 roboto-slab" style="color: rgba(237, 203, 177, 1);">Članovi savjeta
-                    mladih Općine
-                    Sračinec
-                </h3>
-                <!-- Member -->
-                <div class="member col-6 col-md-3 m-0 p-0 position-relative overflow-hidden">
-                    <img src="images/imgTest.png" alt="" class="w-100 h-100">
-                    <div class="ovrly d-flex flex-column justify-content-start justify-content-md-center">
-                        <h3 style="color: rgba(237, 203, 177, 1);" class=" roboto-slab">Nikola Kelc</h3>
-                        <p style="color: rgba(237, 203, 177, 1);" class="roboto-slab">Nikola Kelc je predsjednik Savjeta
-                            mladih Općine
-                            Sračinec.</p>
+        <div class="main-wrapper">
+            <div class="container-fluid my-4 py-4">
+                <div class="row g-4">
+                    <!-- First card / First row -->
+                    <div class="col-md-4">
+                        <div class="card h-100" style="background-color: #332929; color: rgba(237, 203, 177, 1);">
+                            <img src="images/VelikaGraba.jpeg" class="card-img-top" alt="Naslov vijesti 1"
+                                style="height: 300px;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size:2rem;">Koncert u Velikoj Grabi
+                                </h5>
+                                <p class="card-text">U Sračincu se ovog ljeta planira održavanje koncerta na otvorenom u
+                                    predivnom ambijentu Velike Grabe. Posjetitelje očekuje večer ispunjena odličnom
+                                    glazbom, druženjem i pozitivnom atmosferom. Organizatori najavljuju i bogatu
+                                    ugostiteljsku ponudu te razne popratne sadržaje. Ulaz je besplatan, a svi su pozvani
+                                    da dođu i uživaju u glazbi pod zvjezdanim nebom.</p>
+                                <a href="#" class="btn btnReadMore" style="font-size: 0.9rem !important;">Pročitaj
+                                    više...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second card / First row -->
+                    <div class="col-md-4">
+                        <div class="card h-100" style="background-color: #332929; color: rgba(237, 203, 177, 1);">
+                            <img src="images/Sracinec-2018.jpg" class="card-img-top" alt="Naslov vijesti 1"
+                                style="height: 300px;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size:2rem;">Društvene igre u Sračincu
+                                </h5>
+                                <p class="card-text">Ovog ljeta organizira se večer društvenih igara namijenjena
+                                    prvenstveno mlađim generacijama. Uz raznoliku ponudu modernih i klasičnih društvenih
+                                    igara, sudionici će moći isprobati svoje vještine, upoznati nove ljude i uživati u
+                                    opuštenoj atmosferi bez tehnologije – samo dobra volja, ekipa i pokoja karta ili
+                                    kockica.</p>
+                                <a href="#" class="btn btnReadMore" style="font-size: 0.9rem !important;">Pročitaj
+                                    više...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third card / First row -->
+                    <div class="col-md-4">
+                        <div class="card h-100" style="background-color: #332929; color: rgba(237, 203, 177, 1);">
+                            <img src="images/sracinec-13.jpg" class="card-img-top" alt="Naslov vijesti 1"
+                                style="height: 300px;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size:2rem;">Kino u Velikoj Grabi
+                                </h5>
+                                <p class="card-text">Velika Graba u Sračincu ponovno postaje mjesto okupljanja i
+                                    zajedničkog uživanja, ovoga puta kroz filmsku večer pod vedrim nebom! Pozivamo sve
+                                    zaljubljenike u film da nam se pridruže na kinu na otvorenom,
+                                    posjetitelji će imati priliku uživati u jedinstvenoj atmosferi na svježem zraku, uz
+                                    zvukove prirode i sjaj zvijezda.</p>
+                                <a href="#" class="btn btnReadMore" style="font-size: 0.9rem !important;">Pročitaj
+                                    više...</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="member col-6 col-md-3 m-0 p-0 position-relative overflow-hidden">
-                    <img src="images/imgTest.png" alt="" class="w-100 h-100">
-                    <div class="ovrly d-flex flex-column justify-content-start justify-content-md-center">
-                        <h3 style="color: rgba(237, 203, 177, 1);" class=" roboto-slab">Lana Hrženjak</h3>
-                        <p style="color: rgba(237, 203, 177, 1);" class="roboto-slab">Lana Hrženjak...</p>
+                <!-- Second row -->
+                <div class="row g-4 my-3">
+                    <!--First card / Second row -->
+                    <div class="col-md-4">
+                        <div class="card h-100" style="background-color: #332929; color: rgba(237, 203, 177, 1);">
+                            <img src="images/Općina.jpg" class="card-img-top" alt="Naslov vijesti 1"
+                                style="height: 300px;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size:2rem;">Internetska sigurnost
+                                </h5>
+                                <p class="card-text">Savjet mladih Općine Sračinec, u suradnji s Osnovnom školom
+                                    Sračinec, organizira panel-diskusiju na temu internetske sigurnosti i
+                                    cyberbullyinga, usmjerenu prvenstveno na edukaciju mladih o sigurnom ponašanju u
+                                    digitalnom svijetu. </p>
+                                <a href="#" class="btn btnReadMore" style="font-size: 0.9rem !important;">Pročitaj
+                                    više...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Second card / Second row -->
+                    <div class="col-md-4">
+                        <div class="card h-100" style="background-color: #332929; color: rgba(237, 203, 177, 1);">
+                            <img src="images/Prvi_Srakarski_Kviz.jpg" class="card-img-top" alt="Naslov vijesti 1"
+                                style="height: 300px;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size:2rem;">Prvi srakarski kviz
+                                </h5>
+                                <p class="card-text">Pozivamo vas na prvi Srakarski kviz, jedinstveno znanje-natjecanje
+                                    posvećeno našem kraju! Očekuju vas zanimljiva, zabavna i ponekad izazovna pitanja
+                                    vezana uz povijest, kulturu, ljude i zanimljivosti iz Sračinca i Svibovca.</p>
+                                <a href="#" class="btn btnReadMore" style="font-size: 0.9rem !important;">Pročitaj
+                                    više...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Third card / Second row -->
+                    <div class="col-md-4">
+                        <div class="card h-100" style="background-color: #332929; color: rgba(237, 203, 177, 1);">
+                            <img src="images/Sinovi_Domovine.png" class="card-img-top" alt="Naslov vijesti 1"
+                                style="height: 300px;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size:2rem;">Sinovi domovine
+                                </h5>
+                                <p class="card-text">Neki članovi Savjeta mladih Sračinec imali su čast prisustvovati
+                                    godišnjoj skupštini Udruge hrvatskih branitelja Sinovi domovine. Bila je to prilika
+                                    da izrazimo poštovanje prema onima koji su svojim doprinosom obilježili ključne
+                                    trenutke hrvatske povijesti.</p>
+                                <a href="#" class="btn btnReadMore" style="font-size: 0.9rem !important;">Pročitaj
+                                    više...</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="member col-6 col-md-3 m-0 p-0 position-relative overflow-hidden">
-                    <img src="images/imgTest.png" alt="" class="w-100 h-100">
-                    <div class="ovrly d-flex flex-column justify-content-start justify-content-md-center">
-                        <h3 style="color: rgba(237, 203, 177, 1);" class=" roboto-slab">Nikola Kelc</h3>
-                        <p style="color: rgba(237, 203, 177, 1);" class="roboto-slab">Nikola Kelc je predsjednik Savjeta
-                            mladih Općine
-                            Sračinec.</p>
-                    </div>
-                </div>
-
-                <div class="member col-6 col-md-3 m-0 p-0 position-relative overflow-hidden">
-                    <img src="images/imgTest.png" alt="" class="w-100 h-100">
-                    <div class="ovrly d-flex flex-column justify-content-start justify-content-md-center">
-                        <h3 style="color: rgba(237, 203, 177, 1);" class=" roboto-slab">Nikola Kelc</h3>
-                        <p style="color: rgba(237, 203, 177, 1);" class="roboto-slab">Nikola Kelc je predsjednik Savjeta
-                            mladih Općine
-                            Sračinec.</p>
-                    </div>
-                </div>
-
-                <!-- Next row -->
-
-                <div class="member col-6 col-md-3 m-0 p-0 position-relative overflow-hidden">
-                    <img src="images/imgTest.png" alt="" class="w-100 h-100">
-                    <div class="ovrly d-flex flex-column justify-content-start justify-content-md-center">
-                        <h3 style="color: rgba(237, 203, 177, 1);" class=" roboto-slab">Nikola Kelc</h3>
-                        <p style="color: rgba(237, 203, 177, 1);" class="roboto-slab">Nikola Kelc je predsjednik Savjeta
-                            mladih Općine
-                            Sračinec.</p>
-                    </div>
-                </div>
-
-                <div class="member col-6 col-md-3 m-0 p-0 position-relative overflow-hidden">
-                    <img src="images/imgTest.png" alt="" class="w-100 h-100">
-                    <div class="ovrly d-flex flex-column justify-content-start justify-content-md-center">
-                        <h3 style="color: rgba(237, 203, 177, 1);" class=" roboto-slab">Nikola Kelc</h3>
-                        <p style="color: rgba(237, 203, 177, 1);" class="roboto-slab">Nikola Kelc je predsjednik Savjeta
-                            mladih Općine
-                            Sračinec.</p>
-                    </div>
-                </div>
-
-                <div class="member col-6 col-md-3 m-0 p-0 position-relative overflow-hidden">
-                    <img src="images/imgTest.png" alt="" class="w-100 h-100">
-                    <div class="ovrly d-flex flex-column justify-content-start justify-content-md-center">
-                        <h3 style="color: rgba(237, 203, 177, 1);" class=" roboto-slab">Nikola Kelc</h3>
-                        <p style="color: rgba(237, 203, 177, 1);" class="roboto-slab">Nikola Kelc je predsjednik Savjeta
-                            mladih Općine
-                            Sračinec.</p>
-                    </div>
-                </div>
-
-                <div class="member col-6 col-md-3 m-0 p-0 position-relative overflow-hidden">
-                    <img src="images/imgTest.png" alt="" class="w-100 h-100">
-                    <div class="ovrly d-flex flex-column justify-content-start justify-content-md-center">
-                        <h3 style="color: rgba(237, 203, 177, 1);" class=" roboto-slab">Nikola Kelc</h3>
-                        <p style="color: rgba(237, 203, 177, 1);" class="roboto-slab">Nikola Kelc je predsjednik Savjeta
-                            mladih Općine
-                            Sračinec.</p>
+                <!-- Third row -->
+                <div class="row g-4 my-3">
+                    <!-- First card / Third row -->
+                    <div class="col-md-4">
+                        <div class="card h-100" style="background-color: #332929; color: rgba(237, 203, 177, 1);">
+                            <img src="images/SretanUsrks.png" class="card-img-top" alt="Naslov vijesti 1"
+                                style="height: 300px;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size:2rem;">Sretan Uskrs!
+                                </h5>
+                                <p class="card-text">Neka vam Uskrs donese mir u srcu, radost u domu i vjeru u bolje
+                                    sutra.Provedite ove blagdane u krugu svojih najmilijih, ispunjeni ljubavlju, nadom i
+                                    zahvalnošću. Želi vam Savjet mladih Sračinec.</p>
+                                <a href="#" class="btn btnReadMore" style="font-size: 0.9rem !important;">Pročitaj
+                                    više...</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container-fluid px-0" style="background-color: #332929; max-width: 1920px;">
-            <div class="row align-items-center justify-content-center g-0 py-5">
-                <div class="col-12 col-md-6 col-lg-5 px-4" style="color: rgba(237, 203, 177, 1);">
-                    <div style="max-width: 600px; margin: 0 auto;">
-                        <h3 class="roboto-slab" style="font-size: 2.5rem;">MISIJA NAŠEG TIMA</h3>
-                        <p class="roboto-slab-light" style="font-size: 1.3rem;">
-                            Savjet mladih Sračinec djeluje kao glas mladih u lokalnoj zajednici, potiče njihovu aktivnu
-                            uključenost u donošenje odluka te organizira aktivnosti koje pridonose obrazovanju,
-                            zapošljavanju i kvaliteti života mladih.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5 px-4 d-flex justify-content-center justify-content-md-end">
-                    <img src="images/Savjet_mladih.png" alt="Savjet mladih Sračinec"
-                        style="max-width: 500px; width: 100%; height: auto;" class="img-fluid">
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid pt-5 pb-5" style="max-width: 1920px;">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
-                    <img src="images/Kelc_i_Denis.png"
-                        alt="Kolega Nikola Kelc i Denis Plantak na održavanju Sinova domovine" class="img-fluid"
-                        style="max-width: 100%; height: auto;">
-                </div>
-
-                <div class="col-12 col-md-6 d-flex flex-column justify-content-center"
-                    style="color: rgba(237, 203, 177, 1); max-width: 735px; margin: 0 auto;">
-                    <h3 class="roboto-slab" style="font-size: 2.5rem;">VIZIJA NAŠEG TIMA</h3>
-                    <p class="roboto-slab-light" style="font-size: 1.3rem;">
-                        Stvaranje društva u kojem su mladi aktivni, informirani i ravnopravno sudjeluju u kreiranju
-                        politike i razvoja lokalne zajednice.
-                    </p>
-                </div>
-            </div>
+            <!-- Pagination -->
+            <nav aria-label="Page navigation" id="1" class="pb-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="Dogadaji.html#1">1</a></li>
+                    <li class="page-item"><a class="page-link" href="Dogadaji2.html#2">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="Dogadaji2.html">Next</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </main>
     <footer class="text-white pt-5">
@@ -283,9 +308,9 @@
 
                 <!-- Middle section: anchors -->
                 <div class="col-12 col-md-3 mb-4">
-                    <h5 class="fw-bold mb-3">O nama</h5>
+                    <h5 class="fw-bold mb-3">Događaji</h5>
                     <p><a href="index.html" class="text-decoration-none text-white">Naslovnica</a></p>
-                    <p><a href="Dogadaji.html" class="text-decoration-none text-white">Događaji</a></p>
+                    <p><a href="O_nama.html" class="text-decoration-none text-white">O nama</a></p>
                     <p><a href="" class="text-decoration-none text-white">Kontakt</a></p>
                     <p><a href="" class="text-decoration-none text-white">Galerija</a></p>
                 </div>
