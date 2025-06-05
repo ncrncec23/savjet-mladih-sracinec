@@ -441,7 +441,7 @@ footer::after {
 .sponsors-slider {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 1920px;
 }
 
 .sponsors-track {
@@ -473,28 +473,36 @@ footer::after {
     }
 }
 
+.sponosorsWrapper {
+    display: flex;
+    justify-content: center;
+}
+
 /* CSS code for About Us Section */
 
-.slide {
-    display: none;
+.member {
+    position: relative;
+    overflow: hidden;
 }
 
-.slide.active {
-    display: block;
+.ovrly {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    padding: 1rem;
+    overflow-y: auto;
 }
 
-.dot {
-    height: 8px;
-    width: 8px;
-    margin: 0 3px;
-    background-color: #ccc;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #fff;
+.member:hover .ovrly {
+    transform: translateY(0%);
+    opacity: 1;
 }
 
 /* Media Queries */
