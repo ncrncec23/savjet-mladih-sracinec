@@ -94,6 +94,9 @@ nav {
     background-color: #A47A1E;
     border-radius: 40px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    top: 0;
 }
 
 @keyframes hoverCTA {
@@ -107,7 +110,9 @@ nav {
 }
 
 .joinPadding:hover {
-    animation: hoverCTA 1s ease-in-out forwards;
+    animation: hoverCTA 0.5s ease-in-out forwards;
+    top: -3px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .li-color {
