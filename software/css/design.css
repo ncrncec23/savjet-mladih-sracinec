@@ -527,6 +527,10 @@ footer::after {
     border-color: #654f4f;
 }
 
+.hvr:hover {
+    color: rgba(237, 203, 177, 1) !important;
+}
+
 /* Media Queries */
 
 @media (max-width: 1277px) {

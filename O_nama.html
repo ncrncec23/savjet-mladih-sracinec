@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>O nama</title>
     <!-- SEO Optimization -->
     <meta name="description"
@@ -144,7 +146,7 @@
                 </h3>
                 <!-- Member -->
                 <div class="member col-6 col-md-3 m-0 p-0 position-relative overflow-hidden">
-                    <img src="images/imgTest.png" alt="" class="w-100 h-100">
+                    <img src="images/NikolaKelc.jpg" alt="" class="w-100 h-100">
                     <div class="ovrly d-flex flex-column justify-content-start justify-content-md-center">
                         <h3 style="color: rgba(237, 203, 177, 1);" class=" roboto-slab">Nikola Kelc</h3>
                         <p style="color: rgba(237, 203, 177, 1);" class="roboto-slab">Nikola Kelc je predsjednik Savjeta
@@ -240,7 +242,7 @@
 
                 <div class="col-12 col-md-6 col-lg-5 px-4 d-flex justify-content-center justify-content-md-end">
                     <img src="images/Savjet_mladih.png" alt="Savjet mladih Sračinec"
-                        style="max-width: 500px; width: 100%; height: auto;" class="img-fluid">
+                        style="max-width: 500px; width: 100%; height: auto;" class="img-fluid" data-aos="fade-left">
                 </div>
             </div>
         </div>
@@ -250,7 +252,7 @@
                 <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
                     <img src="images/Kelc_i_Denis.png"
                         alt="Kolega Nikola Kelc i Denis Plantak na održavanju Sinova domovine" class="img-fluid"
-                        style="max-width: 100%; height: auto;">
+                        style="max-width: 100%; height: auto;" data-aos="fade-right">
                 </div>
 
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-center"
@@ -328,7 +330,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-    <script src="software/js/interactivity.js"></script>
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

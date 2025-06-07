@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Savjet mladih Sračinec</title>
     <!-- SEO Optimization -->
     <meta name="description"
@@ -152,7 +154,7 @@
                     <div>
                         <h3 class="display-5 fw-bold text-body-emphasis text-center changeFontSize roboto-slab"
                             style="color: rgba(237, 203, 177, 1) !important;">
-                            “Savjet mladih stvara prostor za zabavu i nova prijateljstva!”
+                            <span id="typed-quote"></span>
                         </h3>
                         <div class="col-lg-6 mx-auto text-end w-100 mt-4 chg">
                             <p class="lead mb-0 roboto changeFontSizeP"
@@ -440,7 +442,7 @@
                         <div class="col-md-7 position-relative mb-4 mb-md-0">
                             <img src="images/Savjet_mladih.png" alt="O nama" class="img-fluid rounded" />
                             <a href="O_nama.html"
-                                class="btn btn-link text-white fw-bold position-absolute bottom-0 start-0 m-3 text-decoration-none roboto-slab">
+                                class="btn btn-link text-white fw-bold position-absolute bottom-0 start-0 m-3 text-decoration-none roboto-slab hvr">
                                 Više o nama <i class="fa fa-arrow-right" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -450,7 +452,7 @@
                             <div class="mb-3 position-relative">
                                 <img src="images/Savjet_mladih_2.jpg" alt="Slika 1" class="img-fluid rounded" />
                                 <a href="#galerija"
-                                    class="btn btn-link text-white fw-bold position-absolute bottom-0 end-0 m-2 roboto-slab text-decoration-none">
+                                    class="btn btn-link text-white fw-bold position-absolute bottom-0 end-0 m-2 roboto-slab text-decoration-none hvr">
                                     Galerija slika <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -571,6 +573,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Typed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        AOS.init();
+        setTimeout(() => {
+            new Typed('#typed-quote', {
+                strings: ["“Savjet mladih stvara prostor za zabavu i nova prijateljstva!”"],
+                typeSpeed: 40,
+                showCursor: false
+            });
+        }, 500);
+    </script>
+
 </body>
 
 </html>
