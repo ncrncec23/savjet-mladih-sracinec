@@ -28,8 +28,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Savjet mladih Sračinec</title>
     <!-- SEO Optimization -->
     <meta name="description"
@@ -43,7 +41,7 @@
     <!-- This is header region -->
     <header>
         <div class="image-container header-wrapper">
-            <img src="images/OpcinaSracinec.png" alt="BannerSračinec" class="w-100 object-fit-cover"
+            <img src="images/Sracinec-2018.jpg" alt="BannerSračinec" class="w-100 object-fit-cover"
                 style="max-height: 750px; min-height: 400px;">
             <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
             <nav class="position-absolute top-0 start-0 w-100">
@@ -111,7 +109,8 @@
                     <div class="me-4 marginResponsive d-none d-sm-block">
                         <ul
                             class="list-unstyled d-flex flex-row justify-content-end align-items-center gap-4 mb-0 changeGap">
-                            <li><a href="index.html" class="text-reset text-decoration-none navigationLink li-color">Naslovnica</a>
+                            <li><a href="index.html"
+                                    class="text-reset text-decoration-none navigationLink li-color">Naslovnica</a>
                             </li>
                             <li><a href="Dogadaji.html"
                                     class="text-reset text-decoration-none navigationLink li-color">Događaji</a>
@@ -119,7 +118,8 @@
                             <li><a href="O_nama.html" class="text-reset text-decoration-none navigationLink li-color">O
                                     nama</a>
                             </li>
-                            <li><a href="#" class="text-reset text-decoration-none navigationLink li-color"style="color: #E10501 !important; font-weight: bold;">Kontakt</a>
+                            <li><a href="#" class="text-reset text-decoration-none navigationLink li-color"
+                                    style="color: #E10501 !important; font-weight: bold;">Kontakt</a>
                             </li>
                             <li><a href="#" class="text-reset text-decoration-none navigationLink li-color">Galerija</a>
                             </li>
@@ -136,65 +136,88 @@
             </div>
         </div>
     </header>
-    
-    <!--Konatct-->
-    <main>
-    <div class="container my-4">
-        <h3 class="mb-4 roboto-slab" style="color: rgba(237, 203, 177, 1);">JAVITE SE!</h3>
 
-        <!-- Red: kontakt informacije (lijevo) i forma (desno) -->
+    <!--Contact-->
+    <main>
+        <div class ="container my-4">
         <div class="row">
+            <!-- Red: kontakt informacije (lijevo) i forma (desno) -->
             <!-- Lijeva kolona: kontakt informacije -->
-            <div class="col-md-6 mb-4"style="color: rgba(237, 203, 177, 1);">
-                <div class="d-flex mb-2"><i class="bi bi-geo-alt-fill me-2"></i><p class="mb-0">Adresa: Varaždinska ul. 188, 42209, Sračinec</p></div>
-                <div class="d-flex mb-2"><i class="bi bi-telephone-fill me-2"></i><p class="mb-0">Tel: +385 42 390 000</p></div>
-                <div class="d-flex mb-2"><i class="bi bi-calculator me-2"></i><p class="mb-0">Fax: +385 42 390 000</p></div>
-                <div class="d-flex mb-2"><i class="bi bi-envelope-fill me-2"></i><p class="mb-0">Email: mail@mail.com</p></div>
+            <div class="col-md-6 mb-4 text-center" style="color: rgba(237, 203, 177, 1);">
+                <h1 class="mb-4 roboto-slab" >JAVITE SE!</h1>
+
+                    <!-- Telefon -->
+                <div class="mb-4 roboto-slab">
+                    <i class="bi bi-phone fs-3"></i>
+                    <p class="mb-1 mt-2 fw-bold">Telefon</p>
+                    <p class="mb-0">+385 99 746 7731</p>
+                    <hr class="mx-auto" style="width:300px; border-top: 3px solid rgba(237, 203, 177, 1); margin-top: 10px;">
+                </div>
+
+                <!-- Email -->
+                <div class="mb-4 roboto-slab">
+                    <i class="bi bi-envelope fs-3"></i>
+                    <p class="mb-1 mt-2 fw-bold">Email</p>
+                    <p class="mb-0">savjetmladihsracinec02@gmail.com</p>
+                    <hr class="mx-auto" style="width:300px; border-top: 3px solid rgba(237, 203, 177, 1); margin-top: 10px;">
+                </div>
+
+                <!-- Adresa -->
+                <div class="mb-4 roboto-slab">
+                    <i class="bi bi-geo-alt fs-3"></i>
+                    <p class="mb-1 mt-2 fw-bold">Adresa</p>
+                    <p class="mb-0">Varaždinska ul. 188, 42209 Sračinec</p>
+                    <hr class="mx-auto" style="width:300px; border-top: 3px solid rgba(237, 203, 177, 1);  margin-top: 10px;">
+                </div>
             </div>
 
             <!-- Desna kolona: forma -->
-            <div class="col-md-6 mb-4 contact-form" style="color: rgba(237, 203, 177, 1);">
-                <form>
+            <div class="col-md-6 mb-4 contact-form" style="color: rgba(237, 203, 177, 1); margin-top: 55px;">
+                <form class="d-flex justify-content-center align-items-center">
                     <fieldset>
-                        <legend class="custom-legend roboto-slab">AKO IMATE BILO KAKVA PITANJA MOŽETE NAM <br>POSLATI PORUKU</legend>
-                        <div class="mb-3" >
-                            <input type="text" class="form-control " style="background-color: rgba(122, 110, 110, 1); border-color: rgba(122, 110, 110, 1); color: rgba(237, 203, 177, 1)!important;" placeholder="Unesite ime">
+                        <legend class="custom-legend roboto-slab" >AKO IMATE BILO KAKVA PITANJA MOŽETE NAM
+                            <br>POSLATI PORUKU
+                        </legend>
+                        <div class="mb-3">
+                            <input type="text" class="form-control w-100"
+                                style="background-color: rgba(122, 110, 110, 1); border-color: rgba(122, 110, 110, 1); color: rgba(237, 203, 177, 1) !important;"
+                                placeholder="Unesite ime" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" style="background-color: rgba(122, 110, 110, 1); border-color: rgba(122, 110, 110, 1) ;" placeholder="Unesite prezime">
+                            <input type="text" class="form-control w-100"
+                                style="background-color: rgba(122, 110, 110, 1); border-color: rgba(122, 110, 110, 1); color: rgba(237, 203, 177, 1) !important;"
+                                placeholder="Unesite prezime" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" style="background-color: rgba(122, 110, 110, 1); border-color: rgba(122, 110, 110, 1) ;" placeholder="Unesite naslov">
+                            <input type="text" class="form-control w-100"
+                                style="background-color: rgba(122, 110, 110, 1); border-color: rgba(122, 110, 110, 1); color: rgba(237, 203, 177, 1) !important;"
+                                placeholder="Unesite naslov" required>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="3" style="background-color: rgba(122, 110, 110, 1); border-color: rgba(122, 110, 110, 1) ;" placeholder="Unesite poruku"></textarea>
+                            <textarea class="form-control w-100" rows="3" 
+                                style="background-color: rgba(122, 110, 110, 1); border-color: rgba(122, 110, 110, 1); color: rgba(237, 203, 177, 1) !important;"
+                                placeholder="Unesite poruku" required></textarea>
                         </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary custom-button roboto-slab" style="margin-left: 150px; margin-top:20px;">Pošalji</button>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button type="submit" class="btn btn-primary custom-button roboto-slab">Pošalji</button>
                         </div>
                     </fieldset>
                 </form>
             </div>
         </div>
-</main>
-        <!-- Mapa ispod -->
-        <div class="container-fluid px-0">
-        <div class="row">
-            <div class="col-12">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44079.331558299855!2d16.242891325592705!3d46.33052365180333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f5458049fd903%3A0x2d0a5374deba42db!2zU3JhxI1pbmVj!5e0!3m2!1sen!2shr!4v1749289547720!5m2!1sen!2shr" 
-                    width="100%" 
-                    height="450" 
-                    style="border:0; display: block;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+        </div>
+    </main>
+    <!-- Mapa ispod -->
+    <div>
+        <div class="container-fluid px-0" style="max-width: 1920px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44079.331558299855!2d16.242891325592705!3d46.33052365180333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f5458049fd903%3A0x2d0a5374deba42db!2zU3JhxI1pbmVj!5e0!3m2!1sen!2shr!4v1749289547720!5m2!1sen!2shr"
+                width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </div>
-    
-    
+
 
     <!-- This is footer region -->
     <footer class="text-white pt-5">
@@ -262,21 +285,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-    <!-- AOS JavaScript -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Typed JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        AOS.init();
-        setTimeout(() => {
-            new Typed('#typed-quote', {
-                strings: ["“Savjet mladih stvara prostor za zabavu i nova prijateljstva!”"],
-                typeSpeed: 40,
-                showCursor: false
-            });
-        }, 500);
-    </script>
-
 </body>
 
 </html>
