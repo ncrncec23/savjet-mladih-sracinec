@@ -36,6 +36,6 @@ Tehnologije
 ->[Poveznica na Figma prototip](https://www.figma.com/proto/DACxFWGvtuO7zQgEi1Bc6i/Projekt-v2?page-id=0%3A1&node-id=12-52&t=U3MYFRFO7Hx81hJY-1)<-
 
 ## Poveznica na Web-mjesto
-
+->[Poveznica na Web-mjesto](https://savjet-mladih-sracinec.netlify.app)<-
 
 
